@@ -1,0 +1,109 @@
+.widget__large{
+    flex: 2;
+    box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+    overflow-y: auto;
+    position: relative;
+    height: 300px;
+    border-radius: 10px;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .widget__large{
+        width:100%;
+        overflow-x: auto;
+        margin-top: 10px;
+        /* padding: 20px; */
+    }
+}
+
+.widget__large__header{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(65, 59, 59);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 3px;
+    z-index: 50;
+}
+
+tr > td{
+    color: rgb(65, 59, 59);
+}
+
+.widget__large__table{
+    width: 100%;
+    border-spacing: 20px;
+}
+
+.widget__large__image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+
+.widget__large__th{
+    color: #666;
+    /* position: sticky;
+    top: 0;
+    justify-self: center; */
+    text-align: left;
+}
+
+.widget__large__image__container{
+    display: flex;
+    align-items: center;
+}
+
+.widget__large__button{
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.widget__large__button.Approved{
+    /* background-color: green; */
+    background-color: white;
+    color: green;
+    border: 0.5px solid green;
+}
+
+.widget__large__button.Approved:hover{
+    background-color: green;
+    color: white;
+}
+
+
+.widget__large__button.Declined{
+    background-color: white;
+    color: red;
+    border: 0.5px solid red;
+
+}
+
+
+.widget__large__button.Declined:hover{
+    background-color: red;
+    color: white;
+}
+
+
+.widget__large__button.Pending{
+    background-color: white;
+    color: blue;
+    border: 0.5px solid blue;
+
+}
+
+
+.widget__large__button.Pending:hover{
+    background-color: blue;
+    color: white;
+}

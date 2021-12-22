@@ -1,0 +1,96 @@
+.create__product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+
+
+input, textarea, select{
+    border: 0.5px solid gray;
+    outline: none;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.image__input{
+    border: none;
+}
+
+textarea{
+    width: 80%;
+
+}
+
+.first__set{
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+
+/* .newproduct__image__upload__container{
+    display: flex;
+    align-items: center;
+}  */
+
+.new__product__title{
+    text-align: center;
+    color:#444;
+}
+
+.new__product__form{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newproduct__image__upload__container{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    align-self: flex-start;
+} 
+
+
+.form__data{
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    justify-self: center;
+    object-fit: contain;
+}
+
+label{
+    display: block;
+}
+
+select{
+    width: 100%;
+}
+
+.new__product__upload__image{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.new__product__upload__button{
+padding:8px 12px;
+background-color: rgb(131, 117, 38);
+color: white;
+border:0.5px solid white;
+
+
+}
+
+.new__product__upload__button:hover{
+    color: rgb(131, 117, 38);
+    background-color: white;
+    border: 0.5px solid rgb(131, 117, 38);
+    cursor: pointer;
+}

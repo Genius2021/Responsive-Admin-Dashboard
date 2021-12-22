@@ -1,0 +1,27 @@
+.home{
+    flex: 4;
+}
+
+.home__widgets{
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+    .home__widgets{
+        /* display: flex; */
+        margin: 20px;
+        flex-direction: column;
+    }
+
+    /* .small__widget{
+        border-bottom: 0.5px solid rgb(201, 197, 197);
+        margin-bottom: 10px;
+    } */
+
+    /* .large__widget{
+        overflow-x: auto;
+        width: 60vw;
+    } */
+}

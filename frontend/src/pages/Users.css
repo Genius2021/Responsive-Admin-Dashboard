@@ -1,0 +1,49 @@
+.users{
+    flex: 4;
+}
+
+.tableStyle{
+    height: 400px; 
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .tableStyle{
+        width: 100vw;
+    }
+
+}
+
+
+.user__image{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.userlist__delete{
+    display: flex;
+    align-items: center;
+    padding: 2px 3px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.userlist__delete__icon{
+    color: red;
+}
+
+.userlist__edit{
+    padding: 2px 3px;
+    font-size: 15px;
+    color: blue;
+    cursor: pointer;
+}

@@ -1,0 +1,149 @@
+html, body, .app{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    
+}
+
+*{
+    margin:0;
+    padding: 0;
+    /* object-fit: contain; */
+    /* width:100vw;
+    height: 100vh; */
+}
+/* 
+.app{
+    display: grid;
+    grid-template-areas: 
+       "nav nav nav"
+       "main main main"
+       "footer footer footer";
+    grid-template-columns: 20% 1fr 25%;
+    grid-template-rows: 5rem 1fr 10rem;
+  } */
+
+  /* #3b5998 */
+  
+
+.app{
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+        "navbar navbar"
+        "main main"
+        "footer footer";
+    grid-template-columns: 18% 82%;
+    grid-template-rows: 3rem 1fr 3rem;
+}
+
+.navbar{
+    grid-area: navbar;
+    width: 100%;
+    border-bottom: 0.5px solid rgb(201, 197, 197);
+    height: 3rem;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 500000;
+}
+
+.main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+          "sidebar pages";
+    grid-template-columns: 18% 82%;
+    grid-template-rows: 100%;
+
+}
+
+.main.sidebarNoDisplay{
+    grid-template-areas: 
+          "pages";
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+
+}
+
+.sidebar{
+    grid-area: sidebar;
+    height: calc(100vh - 3rem);
+    background-color: rgb(229, 229, 235);
+    position: sticky;
+    top: 3rem;
+    left: 0;
+    overflow-y: auto;
+    padding: 20px 30px;
+    color: #555;
+}
+
+.pages{
+    grid-area: pages;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .main{
+        grid-area: main;
+        display: grid;
+        grid-template-areas: 
+              "sidebar pages";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100%;
+    }
+    
+    .main.sidebarNoDisplay{
+        grid-area: main;
+        display: grid;
+        grid-template-areas: 
+              "pages";
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+    
+    }
+
+    .sidebar{
+        grid-area: sidebar;
+        height: calc(100vh - 3rem);
+        background-color: rgb(229, 229, 235);
+        z-index: 40000;
+        /* box-shadow: 70vw 0 0 rgba(0,0,0,0.5); */
+        position: fixed;
+        top: 3rem;
+        left: 0;
+        display: none;
+        overflow-y: auto;
+        padding: 20px 30px;
+        color: #555;
+    }
+
+    
+
+    .pages{
+        grid-area: pages;
+        z-index: 30000;
+    }
+
+    .sidebar#display{
+        display: block;
+    }
+
+}
+
+
+.footer{
+    grid-area: footer;
+    width: 100%;
+    border-top: 0.5px solid rgb(201, 197, 197);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #444;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

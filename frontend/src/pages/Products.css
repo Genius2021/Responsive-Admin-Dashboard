@@ -1,0 +1,36 @@
+.products{
+    flex:4;
+}
+
+.products__image{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.products__delete{
+    display: flex;
+    align-items: center;
+    padding: 2px 3px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.products__delete__icon{
+    color: red;
+}
+
+.products__edit{
+    padding: 2px 3px;
+    font-size: 15px;
+    color: blue;
+    cursor: pointer;
+}
